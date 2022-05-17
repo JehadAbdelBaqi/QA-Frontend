@@ -1,0 +1,4 @@
+#image-to-edit {
+    margin: 2%;
+    transform: rotateY(180deg) skew(-25deg, 20deg);
+}
