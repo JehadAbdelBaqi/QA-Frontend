@@ -13,10 +13,11 @@ let clearbox = (id) => {
     document.getElementById(id).innerHTML = "";
 } 
 
-// let clearAll = () => {
-//     clearbox(mainDiv);
-//     clearbox(mainDiv2);
-// }
+let clearAll = () => {
+    clearbox("addToMe");
+    clearbox("addToMe2");
+    buttonCount = 0;
+}
 
 let buttonUp = () => {
     buttonCount++;
@@ -38,4 +39,4 @@ let saveNumber = () => {
 // Event listener
 addBtn.addEventListener("click", buttonUp);
 saveBtn.addEventListener("click", saveNumber);
-// clearBtn.addEventListener("click", clearAll);
+clearBtn.addEventListener("click", clearAll);
